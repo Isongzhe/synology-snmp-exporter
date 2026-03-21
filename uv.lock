@@ -1,0 +1,30 @@
+version = 1
+revision = 3
+requires-python = ">=3.13"
+
+[[package]]
+name = "ezsnmp"
+version = "2.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/50/c2/da8ffc399d81488372f2d6dca7b6fc5537ef2c3fe30fe36cf6f27bf772e5/ezsnmp-2.1.0.tar.gz", hash = "sha256:1e62b61d95684588bf21ce472cd326ae01e8bf1c5372ab0ec395c45037fc7f1e", size = 119833, upload-time = "2025-12-31T18:33:23.209Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/cd/19/265c6d06289dec1aa85cce5d587ad00bff797e38ae70196f9b6acde934f7/ezsnmp-2.1.0-cp313-cp313-macosx_14_0_arm64.whl", hash = "sha256:27e9fe96d629f3e18c784eb43d1bf29d38686c80add4a562b169190edae38ef5", size = 3149735, upload-time = "2025-12-31T18:32:52.253Z" },
+    { url = "https://files.pythonhosted.org/packages/66/75/555e1dad6b5f07a124dafe77e7b5474c6ecce1fb61fafc0c7eb29b6d13d4/ezsnmp-2.1.0-cp313-cp313-macosx_14_0_x86_64.whl", hash = "sha256:09dfe07c6c3eff29294210d1c969b9b7cd0f46557ae4e1004d8a40f6c56a18cf", size = 691540, upload-time = "2025-12-31T18:32:53.988Z" },
+    { url = "https://files.pythonhosted.org/packages/d7/d2/e48c320702e3a8e47ab34b4fce1af27f3c037fffcbca01dfc8ce40a28563/ezsnmp-2.1.0-cp313-cp313-macosx_15_0_arm64.whl", hash = "sha256:e94420a6004c1e60f4e5f5882eec5459115892f21a7dc425be25a72de9c1b1ec", size = 3107470, upload-time = "2025-12-31T18:32:55.571Z" },
+    { url = "https://files.pythonhosted.org/packages/12/db/83a8c8a56941eb66cbaeb47460d63540a78c7f1a7fddd1f29c3a95b0a490/ezsnmp-2.1.0-cp313-cp313-macosx_15_0_x86_64.whl", hash = "sha256:bc4cbd12908947f95d34d0365e68f485b7950c2ecfd009f26eacb83f73856e9d", size = 635500, upload-time = "2025-12-31T18:32:56.996Z" },
+    { url = "https://files.pythonhosted.org/packages/18/e1/938ee5c59a26bcc5dbf66eb13bade73131cd639a491ef7d6283ead33c146/ezsnmp-2.1.0-cp313-cp313-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:80fe2344392b5f7c502ec08c6e8c78fdf44685bf156bcb29a5e5b100489edda7", size = 10732831, upload-time = "2025-12-31T18:32:58.724Z" },
+    { url = "https://files.pythonhosted.org/packages/8d/3b/8e068c00bcf96f9c87becb2581ecb8caad265d8c1f2d8b9faacc76eab051/ezsnmp-2.1.0-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:25ae6808814d1139ac21533f75c9bed51a5ecd66f2161c887ad3d778aca72bfd", size = 10573735, upload-time = "2025-12-31T18:33:00.718Z" },
+    { url = "https://files.pythonhosted.org/packages/ce/dd/97999c3f3d14f8fa407a87b25bd434db5ed7507aa8d912a639085f3b8504/ezsnmp-2.1.0-cp313-cp313-musllinux_1_2_i686.whl", hash = "sha256:3ece01943f9d623eb1ecae93f1f82ffb75cc48c751901a05cef2b60d142c5598", size = 11091014, upload-time = "2025-12-31T18:33:03.051Z" },
+    { url = "https://files.pythonhosted.org/packages/0c/37/c0059b622e4b28ce2a0158d866e0184747a1d62bada2bf3e2a78f3361516/ezsnmp-2.1.0-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:7d80b6bbb5596f0e3d80662d8c7649ffba6bdd4aaac63583c0507b48c57e2dd6", size = 11394345, upload-time = "2025-12-31T18:33:05.098Z" },
+]
+
+[[package]]
+name = "nas-sys-monitoring"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "ezsnmp" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "ezsnmp", specifier = ">=2.1.0" }]

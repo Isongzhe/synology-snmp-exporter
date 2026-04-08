@@ -8,8 +8,8 @@ from model import SystemMetrics
 
 # Configuration
 NAS_DEVICES = {
-    "smlnas": {"host": "192.168.250.139", "name": "SmlNAS-10G"},
-    # "bignas": {"host": "192.168.250.182", "name": "BigNAS-10G"},  # enable when SNMP is configured
+    "wangup": {"host": "192.168.250.139", "name": "SmlNAS-10G"},
+    "wangup26": {"host": "192.168.250.182", "name": "BigNAS-10G"},  # enable when SNMP is configured
 }
 
 import os
